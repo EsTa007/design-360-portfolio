@@ -832,3 +832,16 @@ img {
     align-items: flex-start;
   }
 }
+/* Desktop styles */
+
+/* Tablet */
+@media (max-width: 1024px) {
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+}
