@@ -219,7 +219,8 @@ nav {
   flex-wrap: wrap;
 }
 .hero-image {
-  border: 2px solid red;
+  border: none;
+  outline: none;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -675,4 +676,7 @@ html {
   .hero-image img {
     max-width: 300px;
   }
+}
+img {
+  border: none !important;
 }
