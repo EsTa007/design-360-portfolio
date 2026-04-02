@@ -900,7 +900,7 @@ img {
   }
 }
 /* SCROLL ANIMATION BASE */
-.fade-in {
+/* .fade-in {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease;
@@ -910,4 +910,14 @@ img {
 .fade-in.active {
   opacity: 1;
   transform: translateY(0);
+}
+*/ .fade-in {
+  opacity: 1; /* fallback */
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+.fade-in:not(.active) {
+  opacity: 0;
+  transform: translateY(40px);
 }

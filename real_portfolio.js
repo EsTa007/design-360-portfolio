@@ -177,11 +177,11 @@ function toggleMenu() {
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
-  threshold: 0.2
+  threshold: 0.1,
 };
 
 const appearOnScroll = new IntersectionObserver(function (entries, observer) {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
 
     entry.target.classList.add("active");
@@ -189,6 +189,11 @@ const appearOnScroll = new IntersectionObserver(function (entries, observer) {
   });
 }, appearOptions);
 
-faders.forEach(fader => {
+faders.forEach((fader) => {
   appearOnScroll.observe(fader);
+});
+window.addEventListener("load", () => {
+  faders.forEach((el) => {
+    el.classList.add("active");
+  });
 });
