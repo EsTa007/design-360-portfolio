@@ -510,6 +510,14 @@ button[type="submit"] {
   padding: 40px;
   color: white;
 }
+.contact-info a {
+  color: inherit; /* keeps your design */
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
 .contact-info h2 {
   font-size: 2rem;
   margin-bottom: 30px;
