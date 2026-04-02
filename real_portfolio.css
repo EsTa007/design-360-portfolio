@@ -899,3 +899,15 @@ img {
     font-size: 1.8rem;
   }
 }
+/* SCROLL ANIMATION BASE */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+/* WHEN ACTIVE */
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
